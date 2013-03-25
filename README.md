@@ -1,4 +1,4 @@
-zorro
+Zorro
 =====
 
-How to use IPython.parallel on HPC Zorro
+How to use IPython.parallel on AU's HPC Zorro
