@@ -131,28 +131,29 @@ def n_digit_freqs(digits, n, normalize=False):
 
 # Plotting functions
 
-def plot_two_digit_freqs(f2):
+def plot_two_digit_freqs(f2, figsize=(8,8)):
     """
     Plot two digits frequency counts using matplotlib.
     """
+    fig, ax = plt.subplots(figsize=figsize)
     f2_copy = f2.copy()
     f2_copy.shape = (10,10)
-    ax = plt.matshow(f2_copy)
-    plt.colorbar()
+    matax = ax.matshow(f2_copy)
+    fig.colorbar(matax)
     for i in range(10):
         for j in range(10):
-            plt.text(i-0.2, j+0.2, str(j)+str(i))
-    plt.ylabel('First digit')
-    plt.xlabel('Second digit')
+            ax.text(i-0.2, j+0.2, str(j)+str(i))
+    ax.set_ylabel('First digit')
+    ax.set_xlabel('Second digit')
     return ax
 
 def plot_one_digit_freqs(f1, figsize=(8,6)):
     """
     Plot one digit frequency counts using matplotlib.
     """
-    fig, ax = subplot.plots(figsize=figsize)
+    fig, ax = plt.subplots(figsize=figsize)
     ax.plot(f1,'bo-')
-    ax.title('Single digit counts in pi')
-    ax.xlabel('Digit')
-    ax.ylabel('Count')
+    ax.set_title('Single digit counts in pi')
+    ax.set_xlabel('Digit')
+    ax.set_ylabel('Count')
     return ax
