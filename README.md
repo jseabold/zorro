@@ -14,4 +14,4 @@ To quickstart this notebook type (replacing the path with yours)
 
 You can read more about the notebooks in the [IPython documentation](http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html).
 
-You can view the output of this notebook online [here](http://nbviewer.ipython.org/github/jseabold/zorro/blob/master/ipython_hpc_intro.ipynb?create=1).
+You can view the output of this notebook online [here](http://nbviewer.ipython.org/github/jseabold/zorro/blob/master/ipython_hpc_intro.ipynb).
